@@ -1,11 +1,16 @@
+all: 2013_2016_clean.diff
+
 2016-Scrum-Guide-US.pdf:
 	curl --remote-name --silent --show-error http://www.scrumguides.org/docs/scrumguide/v2016/$@
 
 2013-Scrum-Guide-US.pdf:
 	curl --output $@ --silent --show-error http://www.scrumguides.org/docs/scrumguide/v1/Scrum-Guide-US.pdf
 
+Scrum-Guide-FR.pdf:
+	curl --output $@ --silent --show-error http://www.scrumguides.org/docs/scrumguide/v1/$@
+
 %.txt: %.pdf
-	pdftotext $< - | sed 's/\f//' > $@
+	pdftotext $< - | sed -e 's/\f//' -e 's:due to th e:due to the:' -e 's:time -box:time-box:' -e 's:goal \.:goal.:' -e 's:coul d:could:' > $@ 
 
 2013_2016.diff: 2013-Scrum-Guide-US.txt 2016-Scrum-Guide-US.txt
 	diff -u $? >$@
