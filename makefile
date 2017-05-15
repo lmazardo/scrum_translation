@@ -1,7 +1,7 @@
 CURL=curl
 CURL_FLAGS=--silent --show-error --location
 
-all: 2013_2016_clean.diff
+all: 2013_2016_clean.diff 2013-Scrum-Guide-FR.txt
 
 2016-Scrum-Guide-US.pdf:
 	@echo "fetching $@"
@@ -11,9 +11,9 @@ all: 2013_2016_clean.diff
 	@echo "fetching $@"
 	@$(CURL) $(CURL_FLAGS) --output $@ http://www.scrumguides.org/docs/scrumguide/v1/Scrum-Guide-US.pdf
 
-Scrum-Guide-FR.pdf:
-	@echo "fetching $@"
-	@$(CURL) $(CURL_FLAGS) --output $@ http://www.scrumguides.org/docs/scrumguide/v1/$@
+2013-Scrum-Guide-FR.pdf:
+	@echo "fetching $(subst 2013-,,$@)"
+	@$(CURL) $(CURL_FLAGS) --output $@ http://www.scrumguides.org/docs/scrumguide/v1/$(subst 2013-,,$@)
 
 %.txt: %.pdf
 	@echo "converting $< to $@"
@@ -38,5 +38,5 @@ clean:
 	@rm -f 2013_2016_clean.diff
 	@rm -f 2013-Scrum-Guide-US.pdf
 	@rm -f 2016-Scrum-Guide-US.pdf
-	@rm -f Scrum-Guide-FR.pdf
-	@rm -f Scrum-Guide-FR.txt
+	@rm -f 2013-Scrum-Guide-FR.pdf
+	@rm -f 2013-Scrum-Guide-FR.txt
