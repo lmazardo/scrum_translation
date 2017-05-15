@@ -25,9 +25,11 @@ Scrum-Guide-FR.pdf:
 all: 2013_2016_clean.diff
 
 clean:
-	@rm 2013-Scrum-Guide-US.txt
-	@rm 2016-Scrum-Guide-US.txt
-	@rm 2013_2016.diff
-	@rm 2013_2016_clean.diff
-	@rm 2013-Scrum-Guide-US.pdf
-	@rm 2016-Scrum-Guide-US.pdf
+	@rm -f 2013-Scrum-Guide-US.txt
+	@rm -f 2016-Scrum-Guide-US.txt
+	@rm -f 2013_2016.diff
+	@rm -f 2013_2016_clean.diff
+	@rm -f 2013-Scrum-Guide-US.pdf
+	@rm -f 2016-Scrum-Guide-US.pdf
+	@rm -f Scrum-Guide-FR.pdf
+	@rm -f Scrum-Guide-FR.txt
