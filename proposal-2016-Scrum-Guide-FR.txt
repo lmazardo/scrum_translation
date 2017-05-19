@@ -147,8 +147,8 @@ Quand la responsabilité, le courage, l'attention, la franchise et le respect so
 par l'Équipe Scrum, les piliers de Scrum - la transparence, l'inspection et l'adaptation - prennent vie
 et renforcent la confiance générale. Les membres de l'Équipe Scrum apprennent et explorent ces valeurs
 en travaillant avec les événements de Scrum, les rôles et les artéfacts.
-La réussite de Scrum est conditionnée par les personnes plus compétentes dans l'entretien de ces cinq valeurs.
-People personally commit to achieving the goals of the Scrum Team. Les membres de l'Équipe Scrum ont le
+La réussite de Scrum est conditionnée par la compétence des personnes dans l'entretien de ces cinq valeurs.
+Ces personnes s'engagent à atteindre les objectifs de l'Équipe Scrum. Les membres de l'Équipe Scrum ont le
 courage de faire les bons choix et de travailler sur des problèmes difficiles.
 Chacun porte l'attention sur le travail à effectuer durant le Sprint et les objectifs de l'Équipe Scrum.
 L'Équipe Scrum et les parties prenantes s'entendent sur le travail commun et les défis liés à l'exécution de ce travail.
